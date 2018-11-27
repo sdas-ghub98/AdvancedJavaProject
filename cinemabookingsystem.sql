@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 27, 2018 at 02:23 PM
+-- Generation Time: Nov 27, 2018 at 04:42 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -32,6 +32,7 @@ DROP TABLE IF EXISTS `babydriver`;
 CREATE TABLE IF NOT EXISTS `babydriver` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -48,6 +49,7 @@ DROP TABLE IF EXISTS `blackpanther`;
 CREATE TABLE IF NOT EXISTS `blackpanther` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -64,6 +66,7 @@ DROP TABLE IF EXISTS `bohemianrhapsody`;
 CREATE TABLE IF NOT EXISTS `bohemianrhapsody` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -80,6 +83,7 @@ DROP TABLE IF EXISTS `captainamerica`;
 CREATE TABLE IF NOT EXISTS `captainamerica` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -156,6 +160,7 @@ DROP TABLE IF EXISTS `goosebumps`;
 CREATE TABLE IF NOT EXISTS `goosebumps` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -172,6 +177,7 @@ DROP TABLE IF EXISTS `justiceleague`;
 CREATE TABLE IF NOT EXISTS `justiceleague` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -188,6 +194,7 @@ DROP TABLE IF EXISTS `piratesofcaribbean`;
 CREATE TABLE IF NOT EXISTS `piratesofcaribbean` (
   `Username` varchar(50) NOT NULL DEFAULT '',
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -204,6 +211,7 @@ DROP TABLE IF EXISTS `pursuitofhappyness`;
 CREATE TABLE IF NOT EXISTS `pursuitofhappyness` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -220,6 +228,7 @@ DROP TABLE IF EXISTS `rogueone`;
 CREATE TABLE IF NOT EXISTS `rogueone` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Time` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
@@ -236,6 +245,7 @@ DROP TABLE IF EXISTS `thehost`;
 CREATE TABLE IF NOT EXISTS `thehost` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
+  `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
