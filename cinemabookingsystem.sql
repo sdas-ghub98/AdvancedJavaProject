@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 27, 2018 at 12:50 PM
+-- Generation Time: Nov 27, 2018 at 02:23 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -21,6 +21,70 @@ SET time_zone = "+00:00";
 --
 -- Database: `cinemabookingsystem`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `babydriver`
+--
+
+DROP TABLE IF EXISTS `babydriver`;
+CREATE TABLE IF NOT EXISTS `babydriver` (
+  `Username` varchar(50) NOT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blackpanther`
+--
+
+DROP TABLE IF EXISTS `blackpanther`;
+CREATE TABLE IF NOT EXISTS `blackpanther` (
+  `Username` varchar(50) NOT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bohemianrhapsody`
+--
+
+DROP TABLE IF EXISTS `bohemianrhapsody`;
+CREATE TABLE IF NOT EXISTS `bohemianrhapsody` (
+  `Username` varchar(50) NOT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `captainamerica`
+--
+
+DROP TABLE IF EXISTS `captainamerica`;
+CREATE TABLE IF NOT EXISTS `captainamerica` (
+  `Username` varchar(50) NOT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -85,24 +149,98 @@ INSERT INTO `customerdetails` (`Name`, `Username`, `Password`, `ContactNum`, `Em
 -- --------------------------------------------------------
 
 --
--- Table structure for table `movie1booking`
+-- Table structure for table `goosebumps`
 --
 
-DROP TABLE IF EXISTS `movie1booking`;
-CREATE TABLE IF NOT EXISTS `movie1booking` (
+DROP TABLE IF EXISTS `goosebumps`;
+CREATE TABLE IF NOT EXISTS `goosebumps` (
   `Username` varchar(50) NOT NULL,
   `Venue` varchar(50) NOT NULL,
-  `Timing` datetime(6) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
   `SeatNo` varchar(10) NOT NULL,
-  `PricePaid` float NOT NULL
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `movie1booking`
+-- Table structure for table `justiceleague`
 --
 
-INSERT INTO `movie1booking` (`Username`, `Venue`, `Timing`, `SeatNo`, `PricePaid`) VALUES
-('xyz_xyz', 'Delhi', '2018-09-11 13:05:00.000000', '1A', 250);
+DROP TABLE IF EXISTS `justiceleague`;
+CREATE TABLE IF NOT EXISTS `justiceleague` (
+  `Username` varchar(50) NOT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `piratesofcaribbean`
+--
+
+DROP TABLE IF EXISTS `piratesofcaribbean`;
+CREATE TABLE IF NOT EXISTS `piratesofcaribbean` (
+  `Username` varchar(50) NOT NULL DEFAULT '',
+  `Venue` varchar(50) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pursuitofhappyness`
+--
+
+DROP TABLE IF EXISTS `pursuitofhappyness`;
+CREATE TABLE IF NOT EXISTS `pursuitofhappyness` (
+  `Username` varchar(50) NOT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rogueone`
+--
+
+DROP TABLE IF EXISTS `rogueone`;
+CREATE TABLE IF NOT EXISTS `rogueone` (
+  `Username` varchar(50) NOT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Time` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `thehost`
+--
+
+DROP TABLE IF EXISTS `thehost`;
+CREATE TABLE IF NOT EXISTS `thehost` (
+  `Username` varchar(50) NOT NULL,
+  `Venue` varchar(50) NOT NULL,
+  `Timing` varchar(20) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
+  `PricePaid` float NOT NULL,
+  PRIMARY KEY (`Username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
