@@ -2,9 +2,9 @@
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Nov 27, 2018 at 08:35 PM
--- Server version: 5.7.23
+-- Host: 127.0.0.1:3307
+-- Generation Time: Nov 28, 2018 at 11:40 AM
+-- Server version: 10.3.9-MariaDB
 -- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cinemabookingsystem`
+-- Database: `cinema booking system`
 --
 
 -- --------------------------------------------------------
@@ -66,6 +66,14 @@ CREATE TABLE IF NOT EXISTS `blackpanther` (
   PRIMARY KEY (`Username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `blackpanther`
+--
+
+INSERT INTO `blackpanther` (`Username`, `Venue`, `Date`, `Timing`, `SeatNo`, `PricePaid`) VALUES
+('BiglerFunky', '2', '23rd NOV 2018', '12:30 PM', '6E,6F', 360),
+('Sharlene Calo', '1', '24th NOV 2018', '3:30 PM', '8A,8B,8C,8', 750);
+
 -- --------------------------------------------------------
 
 --
@@ -111,26 +119,10 @@ CREATE TABLE IF NOT EXISTS `captainamerica` (
   `Venue` varchar(50) NOT NULL,
   `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
-  `SeatNo` varchar(300) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
   PRIMARY KEY (`Username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `captainamerica`
---
-
-INSERT INTO `captainamerica` (`Username`, `Venue`, `Date`, `Timing`, `SeatNo`, `PricePaid`) VALUES
-('BoulderBourg', '2', '24th NOV 2018', '10:30 PM', '2A', 180),
-('ArdisEcho', '1', '25th NOV 2018', '7:30 PM', '6A', 150),
-('AprilNicolle', '1', '24th NOV 2018', '3:30 PM', '4C', 150),
-('GrantShewmake', '2', '23rd NOV 2018', '12:30 PM', '9F', 180),
-('DumireDummy', '1', '23rd NOV 2018', '12:30 PM', '1E,1F,1G,1H', 600),
-('KinkyJeff', '2', '24th NOV 2018', '3:30 PM', '5A,5B', 360),
-('AnhartDoubleday', '1', '25th NOV 2018', '3:30 PM', '3C,3D,3E,3F,3G,3H', 900),
-('CornDorn', '2', '23th NOV 2018', '7;30 PM', '2A,2B.2C,2D', 720),
-('BessieSchow', '1', '24th NOV 2018', '10:30 PM', '1I,1J', 300),
-('CameraDeherrera', '2', '25th NOV 2018', '10;30 PM', '1A,1B,2A,2B,1C,1D,2C,2D', 1440);
 
 -- --------------------------------------------------------
 
@@ -249,6 +241,14 @@ CREATE TABLE IF NOT EXISTS `goosebumps` (
   PRIMARY KEY (`Username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `goosebumps`
+--
+
+INSERT INTO `goosebumps` (`Username`, `Venue`, `Date`, `Timing`, `SeatNo`, `PricePaid`) VALUES
+('Teisha Bourg', '2', '23rd NOV 2018', '12:30 PM', '3H,3I,3J', 540),
+('Chang Atherton', '1', '25th NOV 2018', '7:30 PM', ' 7A,7B,7C', 450);
+
 -- --------------------------------------------------------
 
 --
@@ -266,6 +266,15 @@ CREATE TABLE IF NOT EXISTS `justiceleague` (
   PRIMARY KEY (`Username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `justiceleague`
+--
+
+INSERT INTO `justiceleague` (`Username`, `Venue`, `Date`, `Timing`, `SeatNo`, `PricePaid`) VALUES
+('Ardis Traina', '1', '24th NOV 2018', '9:30 AM', '3J,4A,4B', 450),
+('Waneta Frigo', '2', '24th NOV 2018', '7:30 PM', '6A', 180),
+('DumireDummy', '1', '23rd NOV 2018', '12:30 PM', '9F', 150);
+
 -- --------------------------------------------------------
 
 --
@@ -278,20 +287,10 @@ CREATE TABLE IF NOT EXISTS `piratesofcaribbean` (
   `Venue` varchar(50) NOT NULL,
   `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
-  `SeatNo` varchar(300) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
   PRIMARY KEY (`Username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `piratesofcaribbean`
---
-
-INSERT INTO `piratesofcaribbean` (`Username`, `Venue`, `Date`, `Timing`, `SeatNo`, `PricePaid`) VALUES
-('BunnyGangemi', '1', '23rd NOV 2018', '10:30 PM', '6E,6F,6G,6H', 600),
-('BandingSandin', '1', '23rd NOV 2018', '10:30 PM', '1A,1B', 300),
-('BrewsterAmerica', '2', '24th NOV 2018', '12:30 PM', '1C,1D,9A,9B', 720),
-('AthertonBlab', '2', '25th NOV 2018', '7:30 PM', '5D,5E', 360);
 
 -- --------------------------------------------------------
 
@@ -305,20 +304,10 @@ CREATE TABLE IF NOT EXISTS `pursuitofhappyness` (
   `Venue` varchar(50) NOT NULL,
   `Date` varchar(15) NOT NULL,
   `Timing` varchar(20) NOT NULL,
-  `SeatNo` varchar(300) NOT NULL,
+  `SeatNo` varchar(10) NOT NULL,
   `PricePaid` float NOT NULL,
   PRIMARY KEY (`Username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `pursuitofhappyness`
---
-
-INSERT INTO `pursuitofhappyness` (`Username`, `Venue`, `Date`, `Timing`, `SeatNo`, `PricePaid`) VALUES
-('AprilNicolle', '1', '24th NOV 2018', '3:30 PM', '4C', 150),
-('GrantShewmake', '2', '23rd NOV 2018', '12:30 PM', '9F', 180),
-('KinkyJeff', '2', '24th NOV 2018', '3:30 PM', '5A,5B', 360),
-('BessieSchow', '1', '24th NOV 2018', '10:30 PM', '1I,1J', 300);
 
 -- --------------------------------------------------------
 
@@ -336,6 +325,14 @@ CREATE TABLE IF NOT EXISTS `rogueone` (
   `PricePaid` float NOT NULL,
   PRIMARY KEY (`Username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rogueone`
+--
+
+INSERT INTO `rogueone` (`Username`, `Venue`, `Date`, `Time`, `SeatNo`, `PricePaid`) VALUES
+('Muriel Provenzano', '2', '23rd NOV 2018', '12:30 PM', '1B,1C', 360),
+('AnhartDoubleda', '1', '25th NOV 2018', '7:30 PM', '8F,8G,8H', 450);
 
 -- --------------------------------------------------------
 

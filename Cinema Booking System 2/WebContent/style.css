@@ -1,0 +1,355 @@
+@charset "ISO-8859-1";
+
+body {
+	background: #CC0000;
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	color: #FFFFFF
+}
+
+header {
+	background: #FF0000;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	font-family: comic sans ms;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 30px;
+	padding-top: 18px;
+	position: relative;
+}
+
+nav p {
+	margin: 0;
+	font-size: 18px;	
+}
+
+nav a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 550px;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	background: #8080ff;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.description {
+	margin-bottom: 80px;
+	background-color: #ff9800;
+	height: 430px;
+	margin-top: 50px;
+	padding-right: 20px;
+}
+
+.description h2 {
+	color: #FFFFFF;
+	margin-bottom: 7px;
+}
+
+.description h1 {
+	color: #FFFFFF;
+	margin-bottom: 7px;
+	margin-left: 70px;
+	padding-top: 15px;
+}
+
+.description img {
+	width: 350px;
+	height: 300px;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	margin-right: 20px;
+}
+
+.description button {
+	margin-left: 500px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.description button:hover {
+	color: #ff9800;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+	from {top: -300px;
+	opacity: 0
+}
+
+to {
+	top: 0;
+	opacity: 1
+}
+
+}
+@keyframes animatetop {
+	from {top: -300px;
+	opacity: 0
+}
+
+to {
+	top: 0;
+	opacity: 1
+}
+
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: #FF0000;
+	color: white;
+}
+
+.modal-body {
+	padding: 2px 16px;
+	height: 300px;
+}
+
+.modal-body input[type="checkbox"] {
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.modal-body input[type="button"] {
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.modal-body input[type="button"]:hover {
+	color: #ff9800;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #5cb85c;
+}
+
+.venue {	
+	height: 200px;
+	margin-right: 8px;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 24px;
+}
+
+.venue select {
+	width: 170px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+hr {
+	height: 297px;
+	margin-left: 80px;
+	width: 2px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	float: left;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.seat h1{
+	color: #FFFFFF;
+	text-align: center;
+	
+}
+
+.seat div {
+	width: 550px;
+	height: 350px;
+	margin: auto;
+	border: 3px solid;
+	background-color: white;
+	margin-bottom: 63px;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.checkbox {
+	width: 16px;
+	height: 16px;
+	background: url('resources/sofa-16-grey.png') no-repeat;
+	border: 0;
+	margin-top: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+
+.checkbox_occupied {
+	width: 16px;
+	height: 16px;
+	background: url('resources/sofa-16-red.png') no-repeat;
+	border: 0;
+	margin-top: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.checkbox.checked {
+	width: 16px;
+	height: 16px;
+	background: url('resources/sofa-16-green.png') no-repeat;
+	border: 0;
+	margin-top: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+
+.seat input[type="button"] {
+	margin-top: 30px;
+	margin-left: 195px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid;
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.seat input[type="button"]:hover {
+	color: #ff9800;
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: #FF0000;
+	margin-top: 50px;
+	width: 100%;
+	background-color: #FF0000;
+}
+
+footer p {
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 45px;
+}
